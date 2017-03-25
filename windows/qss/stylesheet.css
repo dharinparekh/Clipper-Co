@@ -1,0 +1,66 @@
+ /* QWidget */
+QWidget {
+    background: #1565c0;
+}
+
+/* Line Edit */
+QLineEdit, QLineEdit:hover {
+    border: none;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #dddddd;
+    color: #dddddd;
+    background-color:rgba(0,0,0,0);
+}
+
+QLineEdit:editable{
+    border: none;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #b2dfdb;
+    font-size: 20px;
+}
+
+QLineEdit:disabled{
+    border: 0px solid white;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #eeeeee;
+}
+
+QLineEdit:focus{
+    border: 0px solid white;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #ff9800;
+    color: #eeeeee;
+}
+QLineEdit:pressed {
+    border: none;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #ff9800;
+}
+
+/* Push Button */
+
+QPushButton, QPushButton:focus, QPushButton:focus {
+  background-color: #ff9800;
+  border: none;
+  color: white;
+  padding: 3px 20px;
+}
+
+
+QPushButton:hover, QPushButton:hover:focus {
+  background-color: #ff9800;
+  border-color: #ff9800;
+  border: none;
+}
+
+QPushButton:selected { 
+    border: none;
+}
+
+QPushButton:pressed,
+QPushButton:pressed:focus {
+  background-color: #ee7700;
+  border: none;
+  color: white;
+}
+
