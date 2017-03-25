@@ -2,8 +2,6 @@ from PyQt4.QtCore import QTimer
 from PyQt4 import QtCore, QtGui
 import pyperclip
 import login_backend
-from threading import *
-import sys
 
 og_name = ""
 og_passw = ""
@@ -121,7 +119,6 @@ class Ui_Form(object):
         self.label_3.setGeometry(QtCore.QRect(40, 140, 231, 51))
         self.label_3.setObjectName(_fromUtf8("label_3"))
         self.textEdit = QtGui.QLineEdit(Form)
-        self.textEdit.setAlignment(QtCore.Qt.AlignCenter)
         self.textEdit.setGeometry(QtCore.QRect(85, 290, 141, 40))
         self.textEdit.setObjectName(_fromUtf8("textEdit"))
         self.label = QtGui.QLabel(Form)
@@ -155,7 +152,7 @@ class Ui_Form(object):
         self.pushButton.setText(_translate("Form", "Logout", None))
         self.pushButton2.setText(_translate("Form", "Generate OTP", None))
         self.pushButton3.setText(_translate("Form", "Connect To OTP", None))
-        self.label_3.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:20pt; color:#ffffff;\"> Welcome! </span></p></body></html>", None))
+        self.label_3.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:20pt; color:#ffffff;\"> Welcome </span></p></body></html>", None))
         self.label.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; color:#ffffff;\"></span></p></body></html>", None))
 
 
@@ -169,25 +166,20 @@ class Ui_Form(object):
     
     def logButtonPress(self, Form):
         print "Button Pressed"        
+        import gui
+        gui.procc.kill()
+        gui.procc.terminate()
 
-        try:
-            import gui
-            gui.running = True
-            print "Opening file.."
-            f = open("credentials.txt","w") 
-            f.write("")
-            f.close()
-            Form.hide()
-            print "Showing login form.."
-            gui.exit_all()
+        f = open("credentials.txt","w") 
+        f.write("")
+        f.close()
+        Form.hide()
+        gui.show_login_form()
 
-        except Exception as e:
-            print e
-        
     # Generate otp
     def button1Press(self, Form):
         print "Button 1 Pressed"        
-        otp = login_backend.requestotp("0")
+        otp = login_backend.requestotp()
         self.label.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; color:#ffffff;\">"+otp+"</span></p></body></html>", None))
         self.pushButton2.setEnabled(False)
         #self.pushButton3.setEnabled(False)

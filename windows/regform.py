@@ -189,7 +189,7 @@ class Ui_Form(object):
                 f.close()
                 self.label_msg.setText(_translate("Form", "<html><head/><body><b><p align=\"center\"><span style=\" color:#ff9800;\">Registration Successful!</span></p></b></body></html>", None))            
                 Form.hide()
-                gui.show_home_form()
+                gui.show_selection_form()
                 print "Success"
             else:
                 self.label_msg.setText(_translate("Form", "<html><head/><body><b><p align=\"center\"><span style=\" color:#ff9800;\">Username not available</span></p></b></body></html>", None))            
