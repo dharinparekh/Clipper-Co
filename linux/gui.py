@@ -13,6 +13,20 @@ procc = None
 running = False
 pid= -1
 test = 0
+
+def _kill_all():
+    try:
+        fil = open('pid.txt','r')
+        pid = int(fil.read())
+    except:
+        pass
+    if(pid != -1):
+        cpid = os.popen("pgrep -P "+str(pid)).readlines()
+        cpid = cpid[0].strip("\n")
+        os.system("kill -9 %s"%pid)
+        if(cpid):
+            os.system("kill -9 %s"%cpid)
+
 def show_login_form():
     Form = QtGui.QWidget()
     login_ui = loginUI()
@@ -61,15 +75,5 @@ if __name__ == "__main__":
         sys.exit(app.exec_())
     except SystemExit as ex:
             pid = -1
-            try:
-                fil = open('pid.txt','r')
-                pid = int(fil.read())
-            except:
-                pass
-            if(pid != -1):
-                cpid = os.popen("pgrep -P "+str(pid)).readlines()
-                cpid = cpid[0].strip("\n")
-                os.system("kill -9 %s"%pid)
-                if(cpid):
-                    os.system("kill -9 %s"%cpid)
+            _kill_all()
             # os.system("killall -9 python")
