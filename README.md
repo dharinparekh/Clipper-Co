@@ -1,4 +1,5 @@
 
+![alt tag](https://github.com/dharinparekh/Clipper-Co./blob/master/design/top.png) <br />
 # Clipper-Co.
 This is an app that can be used to share clipboard between various users. A user can share his/her clipboard among his/her device via his/her login credentials, also a particular user can share the clipboard without sharing the credentials using a OTP. 
 Now, what do we mean by sharing your clipboard? Well, you copy some text on one device (via CTRL + C or any other means) and that text can now be pasted on another device, or rather, a number of other devices! The ultimate simplification of sharing texts between multiple devices!
@@ -40,7 +41,7 @@ For android just install the apk. (Currently only tested on Android 7.0+)
 
 ## Demonstration of the app
 click the below image to view the video  
-[![image](https://i9.ytimg.com/vi/Cjaeqb0LmwI/3.jpg?sqp=COCS38YF&rs=AOn4CLCHGSX8G8wP6SJMgPBcvNQ_mBA07w&time=1490537086885)](https://www.youtube.com/watch?v=Cjaeqb0LmwI&feature=youtu.be)  
+[![image](https://i9.ytimg.com/vi/Cjaeqb0LmwI/3.jpg?sqp=COCS38YF&rs=AOn4CLCHGSX8G8wP6SJMgPBcvNQ_mBA07w&time=1490537086885)](https://youtu.be/SMw1c34_NJA)  
 
 ## Easter Egg: Live typing
 Another application that we built using the same backend logic was live typing, it is exaclty the remote access to one's keyboard. The demonstration of it can be viewed in the video.  
