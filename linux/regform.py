@@ -19,7 +19,7 @@ class Ui_Form(object):
         Form.setObjectName(_fromUtf8("Form"))
         Form.resize(320, 480)
         Form.setFixedSize(Form.size())
-        Form.move(500, 150)
+        Form.move(800, 150)
         Form.setStyleSheet(_fromUtf8("/* QWidget */\n"
 "QWidget {\n"
 "    background: #1565c0;\n"
@@ -124,12 +124,12 @@ class Ui_Form(object):
         self.label_5 = QtGui.QLabel(Form)
         self.label_5.setGeometry(QtCore.QRect(90, 220, 131, 20))
         self.label_5.setObjectName(_fromUtf8("label_5"))
-        
+
         self.label_msg = QtGui.QLabel(Form)
         self.label_msg.setGeometry(QtCore.QRect(80, 265, 150, 20))
         self.label_msg.setObjectName(_fromUtf8("label_msg"))
         self.label_msg.raise_()
-        
+
         self.label_5.raise_()
         self.label_4.raise_()
         self.lineEdit_2.raise_()
@@ -140,7 +140,7 @@ class Ui_Form(object):
         self.label.raise_()
         self.lineEdit_3.raise_()
 
-        
+
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
 
@@ -155,7 +155,7 @@ class Ui_Form(object):
 
     def setEvents(self, Form):
         import functools
-        
+
         self.lineEdit.textChanged.connect(self.hideLabel1)
         self.lineEdit_2.textChanged.connect(self.hideLabel2)
         self.lineEdit_3.textChanged.connect(self.hideLabel3)
@@ -171,7 +171,7 @@ class Ui_Form(object):
 
     def hideLabel3(self):
         self.label_5.setText("")
-    
+
     def buttonPress(self, Form):
         import login_backend
         print "Reg Button Pressed"
@@ -182,20 +182,20 @@ class Ui_Form(object):
             val = login_backend.register(name, passw)
             if val:
                 import gui
-                f = open("credentials.txt","w") 
+                f = open("credentials.txt","w")
                 f.write(name)
                 f.write("\n")
-                f.write(passw) 
+                f.write(passw)
                 f.close()
-                self.label_msg.setText(_translate("Form", "<html><head/><body><b><p align=\"center\"><span style=\" color:#ff9800;\">Registration Successful!</span></p></b></body></html>", None))            
+                self.label_msg.setText(_translate("Form", "<html><head/><body><b><p align=\"center\"><span style=\" color:#ff9800;\">Registration Successful!</span></p></b></body></html>", None))
                 Form.hide()
                 gui.show_home_form()
                 print "Success"
             else:
-                self.label_msg.setText(_translate("Form", "<html><head/><body><b><p align=\"center\"><span style=\" color:#ff9800;\">Username not available</span></p></b></body></html>", None))            
+                self.label_msg.setText(_translate("Form", "<html><head/><body><b><p align=\"center\"><span style=\" color:#ff9800;\">Username not available</span></p></b></body></html>", None))
         else:
-            self.label_msg.setText(_translate("Form", "<html><head/><body><b><p align=\"center\"><span style=\" color:#ff9800;\">Passwords do not match</span></p></b></body></html>", None))            
-        
+            self.label_msg.setText(_translate("Form", "<html><head/><body><b><p align=\"center\"><span style=\" color:#ff9800;\">Passwords do not match</span></p></b></body></html>", None))
+
     def labelPress(self, Form, event):
         import gui
         print "Login thing pressed"

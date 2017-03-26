@@ -1,7 +1,9 @@
 from PyQt4.QtCore import QTimer
 from PyQt4 import QtCore, QtGui
+import thread
 import pyperclip
 import login_backend
+# import notification
 import os
 
 og_name = ""
@@ -30,7 +32,7 @@ class Ui_Form(object):
         Form.setObjectName(_fromUtf8("Form"))
         Form.resize(320, 480)
         Form.setFixedSize(Form.size())
-        Form.move(500, 150)
+        Form.move(800, 150)
         Form.setStyleSheet(_fromUtf8("/* QWidget */\n"
 "QWidget {\n"
 "    background: #1565c0;\n"
@@ -181,7 +183,10 @@ class Ui_Form(object):
     # Generate otp
     def button1Press(self, Form):
         print "Button 1 Pressed"
-        otp = login_backend.requestotp()
+        # notification.Notify("aefsr")
+        # thread.start_new_thread(notification.Notify,("defsr",4),)
+        print "stuff"
+        otp = login_backend.requestotp("0")
         self.label.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; color:#ffffff;\">"+otp+"</span></p></body></html>", None))
         self.pushButton2.setEnabled(False)
         #self.pushButton3.setEnabled(False)

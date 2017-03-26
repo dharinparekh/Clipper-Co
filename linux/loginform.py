@@ -19,7 +19,7 @@ class Ui_Form(object):
         Form.setObjectName(_fromUtf8("Form"))
         Form.resize(320, 480)
         Form.setFixedSize(Form.size())
-        Form.move(500, 150)
+        Form.move(800, 150)
         Form.setStyleSheet(_fromUtf8("/* QWidget */\n"
 "QWidget {\n"
 "    background: #1565c0;\n"
@@ -114,7 +114,7 @@ class Ui_Form(object):
         self.label_4 = QtGui.QLabel(Form)
         self.label_4.setGeometry(QtCore.QRect(90, 240, 131, 20))
         self.label_4.setObjectName(_fromUtf8("label_4"))
-        
+
         self.label_msg = QtGui.QLabel(Form)
         self.label_msg.setGeometry(QtCore.QRect(90, 285, 131, 20))
         self.label_msg.setObjectName(_fromUtf8("label_msg"))
@@ -126,7 +126,7 @@ class Ui_Form(object):
         self.label_logo.setScaledContents(True)
         self.label_logo.setObjectName(_fromUtf8("label_4"))
         self.label_logo.raise_()
-        
+
         self.label_msg.raise_()
         self.label_4.raise_()
         self.label_3.raise_()
@@ -160,7 +160,7 @@ class Ui_Form(object):
 
     def hideLabel2(self):
         self.label_4.setText("")
-    
+
     def buttonPress(self, Form):
         import login_backend
         print "Login Button Pressed"
@@ -172,12 +172,12 @@ class Ui_Form(object):
         print val
         if val:
             import gui
-            f = open("credentials.txt","w") 
-            f.write(name) 
+            f = open("credentials.txt","w")
+            f.write(name)
             f.write("\n")
-            f.write(passw) 
+            f.write(passw)
             f.close()
-            self.label_msg.setText(_translate("Form", "<html><head/><body><b><p align=\"center\"><span style=\" color:#ff9800;\">Login Successful!</span></p></b></body></html>", None))            
+            self.label_msg.setText(_translate("Form", "<html><head/><body><b><p align=\"center\"><span style=\" color:#ff9800;\">Login Successful!</span></p></b></body></html>", None))
             Form.hide()
             gui.show_home_form()
         else:

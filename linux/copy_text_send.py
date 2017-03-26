@@ -105,7 +105,7 @@ client.connect("139.59.79.171")
 client.on_connect = on_connect
 # client.on_message = on_message_callback
 data = open('credentials.txt','r').read().split('\n')
-Username,pwd = data[:2]
+#Username,pwd = data[:2]
 # client.subscribe("test")
 client.loop_start()
 
