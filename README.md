@@ -1,6 +1,7 @@
 
 # Clipper-Co.
-This is an app that can be used to share clipboard between various users. A user can share his/her clipboard among his/her device via his/her login credentials, also a particular user can share the clipboard without sharing the credentials using a OTP.  
+This is an app that can be used to share clipboard between various users. A user can share his/her clipboard among his/her device via his/her login credentials, also a particular user can share the clipboard without sharing the credentials using a OTP. 
+Now, what do we mean by sharing your clipboard? Well, you copy some text on one device (via CTRL + C or any other means) and that text can now be pasted on another device, or rather, a number of other devices! The ultimate simplification of sharing texts between multiple devices!
 
 ### Advantages for common clipboard that we built
 * A common clipboard for all your devices, copy once, paste everywhere.
@@ -17,9 +18,9 @@ This is an app that can be used to share clipboard between various users. A user
 
 ##  Installation
 Download the repository or clone it and go to packaged folder and then to your respective os directory, unzip it and run the executable file, that's it :)  
-We have tested accross multiple systems but if it still fails to work then you can run the application by running the gui.py file
+We have tested accross multiple systems but if it still fails to work then you can run the application by running the gui.py file.
 
-if the double click doesn't work in linux that means you don't have the permission to execute the file just type
+If the double click doesn't work in linux that means you don't have the permission to execute the file just type
 ```
 -> chmod +x gui
 -> ./gui
@@ -35,7 +36,7 @@ if the double click doesn't work in linux that means you don't have the permissi
 >> cd windows
 >> python gui.py
 ```  
-for android just install the apk
+For android just install the apk. (Currently only tested on Android 7.0+)
 
 ## Demonstration of the app
 click the below image to view the video  
@@ -53,12 +54,12 @@ The purpose of this application was to demonstrate that other applications along
 ## How to use this feature?
 The gui isn't built yet but works standalone, go into the respective os folder and execute the following command
 
-for the pc which is getting connected to host
+For the pc which is getting connected to host:
 
 ```python
 >> python copy_text_receive.py
 ```
-for the pc which is going to be the host
+For the pc which is going to be the host:
 
 ```python
 >> python copy_text_send.py
