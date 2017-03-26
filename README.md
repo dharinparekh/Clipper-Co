@@ -6,6 +6,10 @@ This is an app that is used to share clipboard between various users. A user can
 ##  Installation
 Download the repository or clone it and go to you respective os directory and run the executable file, that's it :)  
 
+
 ## How to use it
 To see how to use the app you can watch the video
 [here](link/to/youtube/video)   
+
+## Live typing
+Another application that we

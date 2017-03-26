@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/colorLayout">
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/fields">
+
+                <EditText
+                    android:hint="@string/email"
+                    android:id="@+id/register_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolortransparent"
+                    android:backgroundTint="@color/colorAccent"
+                    android:layout_margin="10dp"/>
+
+                <EditText
+                    android:textColor="@color/textcolor"
+                    android:id="@+id/register_password"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password"
+                    android:backgroundTint="@color/colorAccent"
+                    android:textColorHint="@color/textcolortransparent"
+                    android:inputType="textPassword"/>
+
+                <EditText
+                    android:textColor="@color/textcolor"
+                    android:id="@+id/register_confirm_password"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/confirm_password"
+                    android:backgroundTint="@color/colorAccent"
+                    android:textColorHint="@color/textcolortransparent"
+                    android:inputType="textPassword"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fields"
+            android:layout_centerInParent="true">
+
+                <Button
+                    android:id="@+id/register_button"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="80dp"
+                    android:paddingRight="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:background="@drawable/circle"
+                    android:textColor="@color/textcolor"
+                    android:text="@string/title_register"/>
+
+        </LinearLayout>
+
+</RelativeLayout>
