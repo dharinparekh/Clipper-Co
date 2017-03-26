@@ -39,7 +39,7 @@ for android just install the apk
 
 ## How to use it
 To see how to use the app you can watch the video
-[here](link/to/youtube/video)   
+[here](https://drive.google.com/open?id=0Bw8tqyN4Ev4BZ3Y4S2J1UjJCdTQ)   
 
 ## Live typing
 Another application that we built using the same backend logic was live typing, it is exaclty the remote access to one's keyboard. The demonstration of it can be viewed in the video.  
