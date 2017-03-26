@@ -40,7 +40,7 @@ If the double click doesn't work in linux that means you don't have the permissi
 For android just install the apk. (Currently only tested on Android 7.0+)
 
 ## Demonstration of the app
-click the below image to view the video  
+Click the below image to view the video
 [![image](http://img.youtube.com/vi/SMw1c34_NJA/0.jpg)](https://youtu.be/SMw1c34_NJA)  
 
 ## Easter Egg: Live typing
