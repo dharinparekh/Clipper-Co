@@ -38,7 +38,7 @@ if the double click doesn't work in linux that means you don't have the permissi
 for android just install the apk
 
 ## Demonstration of the app
-[![IMAGE ALT TEXT HERE](/design/7[new].png)](https://www.youtube.com/watch?v=Cjaeqb0LmwI&feature=youtu.be)  
+[![image](https://i9.ytimg.com/vi/Cjaeqb0LmwI/3.jpg?sqp=COCS38YF&rs=AOn4CLCHGSX8G8wP6SJMgPBcvNQ_mBA07w&time=1490537086885)](https://www.youtube.com/watch?v=Cjaeqb0LmwI&feature=youtu.be)  
 
 ## Easter Egg: Live typing
 Another application that we built using the same backend logic was live typing, it is exaclty the remote access to one's keyboard. The demonstration of it can be viewed in the video.  
