@@ -4,7 +4,8 @@
 This is an app that can be used to share clipboard between various users. A user can share his/her clipboard among his/her device via his/her login credentials, also a particular user can share the clipboard without sharing the credentials using a OTP.  
 
 ### Advantages for common clipboard that we built
-* Contents can be pasted directly into any remote computer's application.
+* A common clipboard for all your devices, copy once, paste everywhere.
+* Contents can be pasted directly into anything on the remote computer.
 * Multiple users (more than 2) can be connected via sharing the same otp thus allowing multiusers to share the same clipboard.
 * The clipboard contents are sent to the connected computer only which saves network bandwidth.
 * Copying the same text accidently will not publish the changes to clipboard thus preventing data loss.
@@ -37,15 +38,17 @@ if the double click doesn't work in linux that means you don't have the permissi
 ```  
 for android just install the apk
 
-## How to use it
+## Demonstration of the app
 To see how to use the app you can watch the video
 [here](https://drive.google.com/open?id=0Bw8tqyN4Ev4BZ3Y4S2J1UjJCdTQ)   
 
-## Live typing
+## Easter Egg: Live typing
 Another application that we built using the same backend logic was live typing, it is exaclty the remote access to one's keyboard. The demonstration of it can be viewed in the video.  
 The purpose of this application was to demonstrate that other applications along the same lines can be built using the same backend logic.
 
 * This feature is very useful for the tech related companies to provide better customer support(to repair software related problems of pcs).
 * This feature is only for windows and linux.
 * Our backend send only 3 bytes per character typed which almost 1/10 th of the Normal IP packet which is around 40 bytes, thus saving a lot of network bandwidth.
-* Multiple users can listen to one port and the host will type this will be propogated amongst all the users, this is best for teaching purposes(for eq teaching python the teacher will just type on his interpreter which will pe propogated to all the connected students).
+* Multiple users can listen to one port and the host will type this will be propogated amongst all the users, this is best for teaching purposes(for eg teaching python the teacher will just type on his interpreter which will pe propogated to all the connected students).
+
+![alt tag](https://github.com/dharinparekh/Clipper-Co./blob/master/design/final_new.png) <br />
