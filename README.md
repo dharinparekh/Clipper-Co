@@ -41,6 +41,7 @@ For android just install the apk. (Currently only tested on Android 7.0+)
 
 ## Demonstration of the app
 Click the below image to view the video 
+
 [![image](http://img.youtube.com/vi/SMw1c34_NJA/0.jpg)](https://youtu.be/SMw1c34_NJA)  
 
 ## Easter Egg: Live typing
