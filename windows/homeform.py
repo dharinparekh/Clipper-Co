@@ -31,7 +31,7 @@ class Ui_Form(object):
         Form.setObjectName(_fromUtf8("Form"))
         Form.resize(320, 480)
         Form.setFixedSize(Form.size())
-        Form.move(500, 150)
+        Form.move(200, 150)
         Form.setStyleSheet(_fromUtf8("/* QWidget */\n"
 "QWidget {\n"
 "    background: #1565c0;\n"
@@ -155,7 +155,7 @@ class Ui_Form(object):
         self.pushButton.setText(_translate("Form", "Logout", None))
         self.pushButton2.setText(_translate("Form", "Generate OTP", None))
         self.pushButton3.setText(_translate("Form", "Connect To OTP", None))
-        self.label_3.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:20pt; color:#ffffff;\"> Welcome! </span></p></body></html>", None))
+        self.label_3.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:20pt; color:#ffffff;\"> Welcome </span></p></body></html>", None))
         self.label.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; color:#ffffff;\"></span></p></body></html>", None))
 
 

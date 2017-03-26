@@ -47,13 +47,13 @@ def register(Username,Password):
     client.subscribe(Username+"/"+Password)
     client.publish("/signup",Username+"/"+Password)
 
-def requestotp(value):
+def requestotp():
     global otp_flag
     #client.connect("139.59.79.171")
     data = open('credentials.txt','r').read().split('\n')
     Username,pwd = data
     client.subscribe(Username+"/"+pwd+"/otp")
-    client.publish("/requestotp",Username+"/"+pwd+"/"+value)
+    client.publish("/requestotp",Username+"/"+pwd)
     #client.disconnect()
     while not otp_flag:
         pass
