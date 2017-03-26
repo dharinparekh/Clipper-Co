@@ -66,7 +66,7 @@ def clip():
         if ctext == prevText:
             pass
         elif ctext != '' and prevText != '':
-            print "\n\nT: " + ctext + " S: " + str(semaphore) + " PT: " + prevText
+            #print "\n\nT: " + ctext + " S: " + str(semaphore) + " PT: " + prevText
             #print "Text Copied"
             if semaphore == 1 and ctext != '':
                 # Not changed by mqtt

@@ -43,7 +43,10 @@ def show_reg_form():
 if __name__ == "__main__":
     app = QtGui.QApplication(sys.argv)
     show_login_form()
-    sys.exit(app.exec_())
+    try:
+        sys.exit(app.exec_())
+    except:
+        os._exit(0)
 
 def exit_all():
     os._exit(0)

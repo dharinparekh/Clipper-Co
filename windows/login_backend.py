@@ -46,14 +46,23 @@ def login(Username,Password):
 def register(Username,Password):
     client.subscribe(Username+"/"+Password)
     client.publish("/signup",Username+"/"+Password)
+    while not flag:
+        pass
+    print "Done"
+    if val:
+        #client.disconnect() should disconnect
+        print "Hello"
+    else:
+        flag = False
+    return val
 
-def requestotp():
+def requestotp(value):
     global otp_flag
     #client.connect("139.59.79.171")
     data = open('credentials.txt','r').read().split('\n')
     Username,pwd = data
     client.subscribe(Username+"/"+pwd+"/otp")
-    client.publish("/requestotp",Username+"/"+pwd)
+    client.publish("/requestotp",Username+"/"+pwd+"/"+value)
     #client.disconnect()
     while not otp_flag:
         pass
