@@ -41,7 +41,7 @@ For android just install the apk. (Currently only tested on Android 7.0+)
 
 ## Demonstration of the app
 click the below image to view the video  
-[![image](https://i9.ytimg.com/vi/Cjaeqb0LmwI/3.jpg?sqp=COCS38YF&rs=AOn4CLCHGSX8G8wP6SJMgPBcvNQ_mBA07w&time=1490537086885)](https://youtu.be/SMw1c34_NJA)  
+[![image](http://img.youtube.com/vi/SMw1c34_NJA/0.jpg)](https://youtu.be/SMw1c34_NJA)  
 
 ## Easter Egg: Live typing
 Another application that we built using the same backend logic was live typing, it is exaclty the remote access to one's keyboard. The demonstration of it can be viewed in the video.  
