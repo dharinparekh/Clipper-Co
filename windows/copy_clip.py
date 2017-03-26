@@ -76,7 +76,7 @@ def clip():
             semaphore = 1
         prevText = ctext
 
-def on_disconnect(a=1, b=2, c=3):
+def on_disconnect():
     reconnect()
 
 def main():

@@ -19,7 +19,7 @@ class Ui_Form(object):
         Form.setObjectName(_fromUtf8("Form"))
         Form.resize(320, 480)
         Form.setFixedSize(Form.size())
-        Form.move(500, 150)
+        Form.move(200, 150)
         Form.setStyleSheet(_fromUtf8("/* QWidget */\n"
 "QWidget {\n"
 "    background: #1565c0;\n"
@@ -179,7 +179,7 @@ class Ui_Form(object):
             f.close()
             self.label_msg.setText(_translate("Form", "<html><head/><body><b><p align=\"center\"><span style=\" color:#ff9800;\">Login Successful!</span></p></b></body></html>", None))
             Form.hide()
-            gui.show_selection_form()
+            gui.show_home_form()
         else:
             self.label_msg.setText(_translate("Form", "<html><head/><body><b><p align=\"center\"><span style=\" color:#ff9800;\">Invalid Credentials!</span></p></b></body></html>", None))
 
