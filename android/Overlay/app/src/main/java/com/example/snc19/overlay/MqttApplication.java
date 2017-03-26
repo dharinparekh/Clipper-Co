@@ -114,9 +114,14 @@ public class MqttApplication extends Application {
                 else if(topic.equals(email+"/"+password+"/otp")){
                     Log.d("Requested OTP",message.toString());
                     if(object.has("otp") && object.has("status") && object.getString("status").equals("1")){
-                        Timer t=new Timer();
                         final String otp=object.getString("otp");
-                        Toast.makeText(page,"Connected to OTP Clipboard for 5 Minutes",Toast.LENGTH_SHORT).show();
+                        activity.runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                ((LoggedIn)activity).getOTPTextView().setText(otp);
+                            }
+                        });
+                        Toast.makeText(page,"Connected to OTP Clipboard for 5 Minutes:"+otp,Toast.LENGTH_SHORT).show();
                         CBManager.client.unsubscribe();
                         CBManager.attachListener(email+"/"+password+"/cc");
                         CBManager.client.subscribe(email+"/"+password+"/cc");

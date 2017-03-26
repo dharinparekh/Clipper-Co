@@ -115,7 +115,7 @@ public class CBManager extends Service implements LogTag{
                     client.unsubscribe(topic);
                 }
 
-                client.unsubscribe();
+                //client.unsubscribe();
                 CBManager.attachListener(emailid+"/"+password+"/cc");
                 CBManager.client.subscribe(emailid+"/"+password+"/cc");
             }

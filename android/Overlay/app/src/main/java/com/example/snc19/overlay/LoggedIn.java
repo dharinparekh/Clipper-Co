@@ -99,6 +99,7 @@ public class LoggedIn extends AppCompatActivity {
             public void onClick(View v) {
                 if(!CBManager.otpMode){
                     Log.d("Clicked OTP","Clicked");
+                    Toast.makeText(LoggedIn.this,emailid+"/"+password,Toast.LENGTH_SHORT).show();
                     ((MqttApplication)getApplication()).subscribe(emailid+"/"+password+"/otp");
                     ((MqttApplication)getApplication()).pub("/requestotp",emailid+"/"+password+"/0");
                 }else{

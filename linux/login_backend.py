@@ -46,6 +46,15 @@ def login(Username,Password):
 def register(Username,Password):
     client.subscribe(Username+"/"+Password)
     client.publish("/signup",Username+"/"+Password)
+    while not flag:
+        pass
+    print "Done"
+    if val:
+        #client.disconnect() should disconnect
+        print "Hello"
+    else:
+        flag = False
+    return val
 
 def requestotp(value):
     global otp_flag

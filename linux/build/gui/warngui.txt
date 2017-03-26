@@ -1,0 +1,110 @@
+missing module named PySide - imported by /usr/local/lib/python2.7/dist-packages/PyInstaller/loader/rthooks/pyi_rth_qt4plugins.py
+missing module named 'org.python' - imported by copy, xml.sax
+missing module named riscosenviron - imported by os
+missing module named riscospath - imported by os
+missing module named riscos - imported by os
+missing module named ce - imported by os
+missing module named _emx_link - imported by os
+missing module named os2 - imported by os
+missing module named nt - imported by os, ntpath
+missing module named org - imported by pickle
+missing module named _subprocess - imported by subprocess
+missing module named msvcrt - imported by subprocess, getpass
+missing module named dns - imported by paho.mqtt.client
+missing module named 'ctypes.macholib' - imported by ctypes.util
+missing module named netbios - imported by uuid
+missing module named win32wnet - imported by uuid
+missing module named vms_lib - imported by platform
+missing module named 'java.lang' - imported by platform, xml.sax._exceptions
+missing module named java - imported by platform
+missing module named _scproxy - imported by urllib
+missing module named EasyDialogs - imported by getpass
+missing module named SOCKS - imported by ftplib
+missing module named rourl2path - imported by urllib
+missing module named _xmlplus - imported by xml
+missing module named 'Carbon.File' - imported by plistlib
+missing module named 'Carbon.Files' - imported by plistlib
+missing module named Carbon - imported by plistlib
+missing module named MacOS - imported by platform
+missing module named macresource - imported by MacOS
+missing module named gestalt - imported by platform
+missing module named _winreg - imported by winreg, platform, mimetypes, urllib
+missing module named winreg.OpenKeyEx - imported by winreg, platform
+missing module named winreg.HKEY_LOCAL_MACHINE - imported by winreg, platform
+missing module named winreg.QueryValueEx - imported by winreg, platform
+missing module named winreg.CloseKey - imported by winreg, platform
+missing module named win32pipe - imported by platform
+missing module named gdk - imported by gtk
+missing module named glib.SPAWN_STDERR_TO_DEV_NULL - imported by glib, gobject
+missing module named glib.OPTION_REMAINING - imported by glib, gobject
+missing module named glib.IO_HUP - imported by glib, gobject
+missing module named glib.IO_NVAL - imported by glib, gobject
+missing module named glib.SPAWN_LEAVE_DESCRIPTORS_OPEN - imported by glib, gobject
+missing module named glib.IO_FLAG_IS_READABLE - imported by glib, gobject
+missing module named glib.OPTION_FLAG_NOALIAS - imported by glib, gobject
+missing module named glib.OPTION_ERROR_BAD_VALUE - imported by glib, gobject
+missing module named glib.SPAWN_SEARCH_PATH - imported by glib, gobject
+missing module named glib.IO_FLAG_IS_WRITEABLE - imported by glib, gobject
+missing module named glib.SPAWN_DO_NOT_REAP_CHILD - imported by glib, gobject
+missing module named glib.IO_PRI - imported by glib, gobject
+missing module named glib.IO_FLAG_APPEND - imported by glib, gobject
+missing module named glib.PRIORITY_DEFAULT_IDLE - imported by glib, gobject
+missing module named glib.SPAWN_STDOUT_TO_DEV_NULL - imported by glib, gobject
+missing module named glib.OPTION_FLAG_OPTIONAL_ARG - imported by glib, gobject
+missing module named glib.IO_FLAG_SET_MASK - imported by glib, gobject
+missing module named glib.OPTION_FLAG_NO_ARG - imported by glib, gobject
+missing module named glib.OPTION_FLAG_IN_MAIN - imported by glib, gobject
+missing module named glib.OPTION_FLAG_REVERSE - imported by glib, gobject
+missing module named glib.PRIORITY_LOW - imported by glib, gobject
+missing module named glib.SPAWN_FILE_AND_ARGV_ZERO - imported by glib, gobject
+missing module named glib.PRIORITY_HIGH_IDLE - imported by glib, gobject
+missing module named glib.OPTION_FLAG_FILENAME - imported by glib, gobject
+missing module named glib.IO_STATUS_AGAIN - imported by glib, gobject
+missing module named glib.OPTION_FLAG_HIDDEN - imported by glib, gobject
+missing module named glib.IO_FLAG_GET_MASK - imported by glib, gobject
+missing module named glib.IO_STATUS_EOF - imported by glib, gobject
+missing module named glib.SPAWN_CHILD_INHERITS_STDIN - imported by glib, gobject
+missing module named glib.IO_OUT - imported by glib, gobject
+missing module named glib.IO_FLAG_IS_SEEKABLE - imported by glib, gobject
+missing module named glib.IO_STATUS_ERROR - imported by glib, gobject
+missing module named glib.IO_FLAG_MASK - imported by glib, gobject
+missing module named glib.PRIORITY_DEFAULT - imported by glib, gobject
+missing module named glib.IO_ERR - imported by glib, gobject
+missing module named glib.IO_STATUS_NORMAL - imported by glib, gobject
+missing module named glib.OPTION_ERROR_FAILED - imported by glib, gobject
+missing module named glib.OPTION_ERROR_UNKNOWN_OPTION - imported by glib, gobject
+missing module named glib.OPTION_ERROR - imported by glib, gobject
+missing module named glib.IO_FLAG_NONBLOCK - imported by glib, gobject
+missing module named glib.IO_IN - imported by glib, gobject
+missing module named glib.PRIORITY_HIGH - imported by glib, gobject
+missing module named glib.PollFD - imported by glib, gobject
+missing module named glib.set_prgname - imported by glib, gobject
+missing module named glib.get_application_name - imported by glib, gobject
+missing module named glib.get_prgname - imported by glib, gobject
+missing module named glib.Pid - imported by glib, gobject
+missing module named glib.MainContext - imported by glib, gobject
+missing module named glib.filename_from_utf8 - imported by glib, gobject
+missing module named glib.child_watch_add - imported by glib, gobject
+missing module named glib.main_depth - imported by glib, gobject
+missing module named glib.io_add_watch - imported by glib, gobject
+missing module named glib.OptionGroup - imported by glib, gobject
+missing module named glib.OptionContext - imported by glib, gobject
+missing module named glib.source_remove - imported by glib, gobject
+missing module named glib.Timeout - imported by glib, gobject
+missing module named glib.Idle - imported by glib, gobject
+missing module named glib.set_application_name - imported by glib, gobject
+missing module named glib.filename_display_basename - imported by glib, gobject
+missing module named glib.MainLoop - imported by glib, gobject
+missing module named glib.get_current_time - imported by glib, gobject
+missing module named glib.IOChannel - imported by glib, gobject
+missing module named glib.filename_display_name - imported by glib, gobject
+missing module named glib.timeout_add - imported by glib, gobject
+missing module named glib.glib_version - imported by glib, gobject
+missing module named glib.spawn_async - imported by glib, gobject
+missing module named glib.idle_add - imported by glib, gobject
+missing module named glib.main_context_default - imported by glib, gobject
+missing module named glib.markup_escape_text - imported by glib, gobject
+missing module named glib.Source - imported by glib, gobject
+missing module named glib.GError - imported by glib, gobject
+missing module named glib.timeout_add_seconds - imported by glib, gobject
+missing module named glib.uri_list_extract_uris - imported by glib, gobject
