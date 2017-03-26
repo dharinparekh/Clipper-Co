@@ -38,6 +38,7 @@ if the double click doesn't work in linux that means you don't have the permissi
 for android just install the apk
 
 ## Demonstration of the app
+click the below image to view the video  
 [![image](https://i9.ytimg.com/vi/Cjaeqb0LmwI/3.jpg?sqp=COCS38YF&rs=AOn4CLCHGSX8G8wP6SJMgPBcvNQ_mBA07w&time=1490537086885)](https://www.youtube.com/watch?v=Cjaeqb0LmwI&feature=youtu.be)  
 
 ## Easter Egg: Live typing
