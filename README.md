@@ -1,7 +1,7 @@
 
 ![alt tag](https://github.com/dharinparekh/Clipper-Co./blob/master/design/top.png) <br />
 # Clipper-Co.
-This is an app that can be used to share clipboard between various users. A user can share his/her clipboard among his/her device via his/her login credentials, also a particular user can share the clipboard without sharing the credentials using a OTP. 
+This is an app that can be used to share clipboard between various users. A user can share his/her clipboard among his/her device via his/her login credentials, also a particular user can share the clipboard without sharing the credentials using a OTP.
 Now, what do we mean by sharing your clipboard? Well, you copy some text on one device (via CTRL + C or any other means) and that text can now be pasted on another device, or rather, a number of other devices! The ultimate simplification of sharing texts between multiple devices!
 
 ### Advantages for common clipboard that we built
@@ -23,24 +23,35 @@ We have tested accross multiple systems but if it still fails to work then you c
 
 If the double click doesn't work in linux that means you don't have the permission to execute the file just type
 ```
--> chmod +x gui
--> ./gui
+$ chmod +x gui
+$ ./gui
 ```
+if it still doesn't work then install it manually by
 
 ```python
->> pip install requirements.txt
->> # for linux
->> cd linux
->> python gui.py
+>>> virtualenv venv
+>>> source venv/bin/activate
+>>> cd venv & mkdir build & cd build
+>>> wget http://sourceforge.net/projects/pyqt/files/sip/sip-4.15.4/sip-4.15.4.zip & unzip sip-4.15.4.zip & cd sip-4.15.4.zip
+>>> python configure.py
+>>> make & make install
+>>> wget http://sourceforge.net/projects/pyqt/files/PyQt4/PyQt-4.10.3/PyQt-x11-gpl-4.10.3.tar.gz #pyqt
+>>> tar zxvf PyQt-x11-gpl-4.10.3.tar.gz & cd PyQt-x11-gpl-4.10.3
+>>> python configure.py
+>>> make & make install
+>>> pip install -r requirements.txt
+>>> # for linux
+>>> cd linux
+>>> python gui.py
 
->> # for windows
->> cd windows
->> python gui.py
+>>> # for windows
+>>> cd windows
+>>> python gui.py
 ```  
 For android just install the apk. (Currently only tested on Android 7.0+)
 
 ## Demonstration of the app
-Click the below image to view the video 
+Click the below image to view the video
 
 [![image](http://img.youtube.com/vi/SMw1c34_NJA/0.jpg)](https://youtu.be/SMw1c34_NJA)  
 
@@ -59,12 +70,12 @@ The gui isn't built yet but works standalone, go into the respective os folder a
 For the pc which is getting connected to host:
 
 ```python
->> python copy_text_receive.py
+>>> python copy_text_receive.py
 ```
 For the pc which is going to be the host:
 
 ```python
->> python copy_text_send.py
+>>> python copy_text_send.py
 ```
 
 
